@@ -42,6 +42,9 @@
                 border: none;
                 border-top: solid #bec4ca thin;
                 border-bottom: solid #bec4ca thin;
+                border-right: solid #bec4ca thin;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
                 padding: 6px;
                 width: 100%;
                 &:focus{
@@ -59,15 +62,7 @@
                 border-bottom-right-radius: 0px;
                 color: rgb(205, 205, 205);
             }
-            .fa-xmark{
-                background-color: white;
-                padding: 7px 11px 6px 6px;
-                border: solid #bec4ca thin;
-                border-left: none;
-                border-radius: 5px;
-                border-top-left-radius: 0px;
-                border-bottom-left-radius: 0px;
-            }
+            
         }
         .filter-dropdown{
             margin: 5px 0px;
@@ -76,7 +71,7 @@
             align-items: center;
             background-color: #e2effa;
             position: relative;
-            
+
             button{
                 font-size: 16px;
                 font-family: 'Montserrat', sans-serif;

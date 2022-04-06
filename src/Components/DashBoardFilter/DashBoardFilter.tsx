@@ -20,7 +20,6 @@ const DashBoardFilter: React.FC<{ SearchName: any, data: Order[], filterFunction
                 <div className="search-input">
                     <i className="fa-solid fa-magnifying-glass"></i>
                     <input onChange={(e) => { SearchName(e) }} type="text" placeholder="Search By Customer Name" />
-                    <i className="fa-solid fa-xmark"></i>
                 </div>
                 <div className="filter-dropdown" onMouseLeave={()=>{setIsOpen(false)}}>
                     <button className="pointer-cursor" onClick={()=>{setIsOpen(!isOpen)}}><i className="fa-solid fa-arrow-down-wide-short"></i> Filter</button>
