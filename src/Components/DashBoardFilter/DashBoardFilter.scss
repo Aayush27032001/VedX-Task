@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.dashboard-top{
+    margin: 10px 0px ;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid rgb(238, 238, 238) 2px;
+        
+        .allorder-container{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #00cac9;
+            margin-bottom: -2px;
+            border-bottom: solid #00cac9 2px;
+            padding: 10px 10px;
+
+            span{
+                background-color: #cbf6f6;
+                padding: 2px 3px;
+                border-radius: 5px;
+            }
+        }
+        .total-results{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            padding: 10px 10px;
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        .search-input{
+            margin: 5px 0px ;
+            padding: 5px 10px 5px 10px;
+            background-color: #e2effa;
+            display: flex;
+            align-items: center;
+            width: 40%;
+            input{
+                border: none;
+                border-top: solid #bec4ca thin;
+                border-bottom: solid #bec4ca thin;
+                padding: 6px;
+                width: 100%;
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            .fa-magnifying-glass{
+                background-color: white;
+                padding: 7px 7px 6px 11px;
+                border: solid #bec4ca thin;
+                border-right: none;
+                border-radius: 5px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                color: rgb(205, 205, 205);
+            }
+            .fa-xmark{
+                background-color: white;
+                padding: 7px 11px 6px 6px;
+                border: solid #bec4ca thin;
+                border-left: none;
+                border-radius: 5px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+        .filter-dropdown{
+            margin: 5px 0px;
+            padding: 0px 3px;
+            display: flex;
+            align-items: center;
+            background-color: #e2effa;
+            position: relative;
+            
+            button{
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                padding: 7px 10px;
+                background-color: white;
+                border: solid #bec4ca thin;
+                border-radius: 10px;
+                font-weight: 600;
+                color: #76787a;
+
+                i{
+                    color: #bec4ca;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .dashboard-top{
+        .bottom{
+            .search-input{
+                .fa-magnifying-glass{
+                    padding: 5.6px 7px 6px 11px;
+                }
+                .fa-xmark{
+                    padding: 5.6px 11px 6px 6px;
+                }
+            }
+        }
+    }
+    
+}

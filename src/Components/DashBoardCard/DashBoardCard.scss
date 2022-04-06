@@ -1,0 +1,60 @@
+.dashboard-card {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 1.8fr 1.5fr 1fr 0.8fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    border-bottom: solid #dedede thin;
+    font-weight: 500;
+    &:last-child{
+        border-bottom:none
+    }
+
+    div{
+        padding-left: 10px;
+        margin: 5px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+
+        .product_description, .address, .country, .product-title{
+            padding-left: 0px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .country, .product-title{
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .order-status{
+            padding-left: 0px;
+            width: fit-content;
+            padding: 5px 10px;
+            border-radius: 11px;
+        }
+
+        .completed{
+            color: #1cd27d;
+            background-color: #d7fae9;
+        }
+
+        .delivered{
+            color: #4d90cf;
+            background-color: #e2effa;
+        }
+
+        .default{
+            color: #eab252;
+            background-color: #f5ebda;
+        }
+    }
+
+    .user-id{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+}

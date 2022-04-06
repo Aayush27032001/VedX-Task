@@ -1,0 +1,16 @@
+.dashboard-header-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 1.8fr 1.5fr 1fr 0.8fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    background-color: #e2effa;
+    border-radius: 5px;
+    div{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        padding: 20px 0px;
+        padding-left: 10px;
+    }
+    
+}
